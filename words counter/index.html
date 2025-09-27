@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word counter</title>
+    <title>Live Character Count</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="container">
-        <h2>Live character counter</h2>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Write anything here !!" onkeyup="countingCharacter()"></textarea>
-        <p>total character typed including space:<span lass="counter">0</span></p>
+        <h2>Live Character Counter</h2>
+        <textarea 
+         name="textarea"
+         id="textarea"
+         cols="30"
+         rows="10"
+         placeholder="Write your text here !!"   
+         onkeyup="countingCharacters()"
+         >
+        </textarea>
+        <p>Total Characters you typed including space: <span class="counter">0</span></p>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
